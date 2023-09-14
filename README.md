@@ -162,6 +162,8 @@ Alternatively, you can use an address sanitizer to catch memory leaks, and inval
        gcc -g3 -Og -Wall -pedantic -fsanitize=address,undefined,leak -o main main.c
    ```
 
+   > Notice the addition of the `-fsanitize=address,undefined,leak` flag.
+
 3. Compile and run. The new Makefile adds a second `debug` target which
    compiles with the address sanitizer.
 
